@@ -76,11 +76,11 @@
   display: inline-block;
 }
 
-.margin_innner_KOTEI {
+.margin_innner_fixed {
   width: 300px;
 }
 
-.margin_innner_KAHEN {
+.margin_innner_variable {
   padding-left: 50px;
 }
 /* 回答はここに書いてね */
