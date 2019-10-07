@@ -2,4 +2,62 @@
 
 /* 回答はここに書いてね */
 
+.transition {
+  overflow: hidden;
+  margin: 0 auto;
+  width: 500px;
+  height: 333px;
+  position: relative;
+  cursor: pointer;
+}
+
+.transition:hover .thumb_gradation {
+  bottom: 0;
+}
+
+.transition:hover .thumb {
+  transform: scale(1.5);
+  transition: all .5s;
+
+}
+
+.thumb_gradation {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,8));
+  transition: all .5s;
+}
+
+.thumb_gradation_text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  color: white;
+}
+
+.spiner {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border:solid 10px #ecf1f2;
+  border-top-color: #00bcd4;
+  border-radius: 50%;
+
+  animation: load 1.1s infinite linear;
+}
+
+@keyframes load {
+  0%{
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
 /* 回答はここに書いてね */

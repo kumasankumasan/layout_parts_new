@@ -68,19 +68,25 @@
 }
 
 .margin_innner {
-  width: 100%;
-
+  font-size: 0;
 }
 
-.margin_innner_box {
+.margin_innner_box_fixed {
   display: inline-block;
-}
-
-.margin_innner_fixed {
   width: 300px;
+  vertical-align: top;
 }
 
-.margin_innner_variable {
-  padding-left: 50px;
+.margin_innner_box_variable {
+  width: 100%;
+  display: inline-block;
+  padding-left: 350px;
+  margin-left: -300px;
+  box-sizing: border-box;
 }
+
+.margin_innner_text {
+  font-size: 16px;
+}
+
 /* 回答はここに書いてね */
